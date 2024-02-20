@@ -173,12 +173,12 @@ footer {
         align-items: center;
         margin: 40px 10px;
         font-weight: bold;
-        line-height: 32px;
+        line-height: 36px;
     }
     section#home h2{
         font-size: 3em;
         margin-left: 5px;
-        margin-bottom: 20px;
+        margin-bottom: 14px;
     }
     
     div#content{
