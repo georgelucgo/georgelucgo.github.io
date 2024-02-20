@@ -5,9 +5,10 @@
     margin: 0px;
     padding: 0px;
     font-family: "Inter", sans-serif;
-        text-decoration: none;
+    text-decoration: none;
 
 }
+
 
 header{
     display: flex;
@@ -101,4 +102,95 @@ footer {
     text-align: center;
     background-color: #274885;
     color: white;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    section#sobre p{
+        margin: 0 auto;
+        width: 84vw;
+        padding: 22px;
+        background-color: #FAFAFA;
+        text-align: justify;
+        border-radius: 34px;
+        
+    }
+    #profile {
+        width: 170px;
+    }
+    
+    .iconify {
+        color: black;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    section#home h2{
+        font-size: 2em;
+        margin-left: 5px;
+        margin-bottom: 8px;
+    }
+    
+    div#content{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body{
+        background-color: #ebe5c5(241, 241, 241);
+    }
+    main{
+        min-width: 500px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    section#sobre p{
+        margin: 0 auto;
+        width: 85vw;
+        max-width: 900px;
+        padding: 22px;
+        background-color: #FAFAFA;
+        text-align: justify;
+        border-radius: 34px;
+        
+    }
+    #profile {
+        width: 200px;
+    }
+    
+    .project{
+        margin-right: 30px;
+    }
+
+    .iconify {
+        color: black;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    section#home{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 10px;
+        font-weight: bold;
+        line-height: 32px;
+    }
+    section#home h2{
+        font-size: 3em;
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+    
+    div#content{
+        margin-left: 20px;
+    }
+    
+    div#project-up{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div#project-down{
+        display: flex;
+    }
 }
