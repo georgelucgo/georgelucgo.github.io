@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter", sans-serif;
+        text-decoration: none;
+
+}
+
+header{
+    display: flex;
+    background-color: #274885;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+nav a{
+    color:white;
+    margin-left: 12px;
+}
+
+.iconify {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#profile {
+    width: 175px;
+}
+
+section#home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 10px;
+    font-weight: bold;
+    line-height: 24px;
+}
+div#content{
+    margin-left: 20px;
+}
+section#home h2{
+    font-size: 2em;
+    margin-bottom: 8px;
+}
+
+.button{
+    color: white;
+    background-color: #4C89F8;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #F6F6F6;
+    margin: 10px 0px;
+}
+
+section#sobre{
+    margin: 16px;
+}
+section#sobre p{
+    margin: 8px;
+    padding: 16px;
+    background-color: #FAFAFA;
+    text-align: justify;
+    border-radius: 34px;
+}
+section#projetos{
+    text-align: center;
+}
+section> p {
+    color: #606060;
+}
+
+.descricao{
+    margin-top: -50px;
+}
+
+.project {
+    margin-bottom: 50px;
+}
+.project img{
+    width: 300px;
+}
+
+footer {
+    text-align: center;
+    background-color: #274885;
+    color: white;
+}
