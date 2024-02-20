@@ -69,12 +69,12 @@ hr{
     margin: 80px 0px;
 }
 
-section#sobre{
+section#sobre h2{
     margin: 16px;
 }
 section#sobre p{
-    margin: 8px;
-    padding: 16px;
+    width: 88vw;
+    padding: 22px;
     background-color: #FAFAFA;
     text-align: justify;
     border-radius: 34px;
