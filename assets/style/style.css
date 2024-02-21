@@ -9,14 +9,25 @@
 
 }
 
+:root {
+    --cor00: #000000;
+    --cor01: #ffffff;
+    --cor02: #274885;
+    --cor03: #4c89f8;
+    --cor04: #d2e1ff;
+    --cor05: #4177da;
+}
 
 header{
     display: flex;
-    background-color: #274885;
-    color: white;
+    background-color: var(--cor02);
+    color: var(--cor01);
     align-items: center;
     justify-content: space-between;
     padding: 8px;
+}
+main {
+    color: var(--cor00);
 }
 
 nav{
@@ -26,27 +37,43 @@ nav{
 }
 
 nav a{
-    color:white;
+    color:var(--cor01);
     margin-left: 20px;
 }
 
 .iconify {
-    color: black;
+    color: var(--cor00);
     font-size: 30px;
     margin-bottom: 20px;
 }
 
+.iconify:hover{
+    transform: translate(0, -2px);
+    animation-duration: 0.6s;
+}
+
 #profile {
-    width: 130px;
+    width: 35%;
+    margin: 100px 0px;
+}
+
+section {
+    margin: auto auto;
+}
+
+#bg1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://cgaskell9367.files.wordpress.com/2015/04/watercolor5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
 section#home{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 10px;
-    font-weight: bold;
     line-height: 24px;
+   
 }
 div#content{
     margin-left: 8px;
@@ -55,30 +82,44 @@ section#home h2{
     font-size: 1.7em;
     margin-left: 2px;
     margin-bottom: 8px;
+    font-weight: 600;
+}
+
+section#home p {
+    font-weight: 500;
 }
 
 .button{
-    color: white;
-    background-color: #4C89F8;
+    color: var(--cor01);
+    background-color: var(--cor03);
     padding: 8px;
     border-radius: 7px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--cor05);
 }
 
 hr{
     border: none;
-    border-top: 1px solid #F6F6F6;
+    border-bottom: 1px solid #F6F6F6;
     margin: 80px 0px;
 }
 
-section#sobre h2{
-    margin: 16px;
+section#sobre{
+    text-align: center;
 }
-section#sobre p{
+
+#sobre-content{
     width: 88vw;
     padding: 22px;
     background-color: #FAFAFA;
     text-align: justify;
     border-radius: 34px;
+}
+ul{
+    list-style-type: none;
 }
 section#projetos{
     text-align: center;
@@ -100,12 +141,21 @@ section> p {
 
 footer {
     text-align: center;
-    background-color: #274885;
-    color: white;
+    background-color: var(--cor02);
+    color: var(--cor01);
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px) {
-    section#sobre p{
+    
+    
+    section#home{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        line-height: 27px;
+    }
+    #sobre-content{
         margin: 0 auto;
         width: 84vw;
         padding: 22px;
@@ -114,18 +164,17 @@ footer {
         border-radius: 34px;
         
     }
-    #profile {
-        width: 170px;
-    }
-    
+
     .iconify {
-        color: black;
+        color: var(--cor00);
         font-size: 40px;
         margin-bottom: 10px;
     }
-    
+    section#home p{
+        font-size: 1.4em;
+    }
     section#home h2{
-        font-size: 2em;
+        font-size: 2.3em;
         margin-left: 5px;
         margin-bottom: 8px;
     }
@@ -135,45 +184,41 @@ footer {
     }
 }
 
-@media screen and (min-width: 800px) {
-    body{
-        background-color: #ebe5c5(241, 241, 241);
-    }
-    main{
-        min-width: 500px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    section#sobre p{
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    
+    #sobre-content{
         margin: 0 auto;
         width: 85vw;
         max-width: 900px;
+        font-size: 1.3em;
         padding: 22px;
         background-color: #FAFAFA;
         text-align: justify;
         border-radius: 34px;
         
     }
-    #profile {
-        width: 200px;
-    }
-    
+ 
     .project{
         margin-right: 30px;
     }
 
-    .iconify {
-        color: black;
-        font-size: 40px;
-        margin-bottom: 30px;
+    .button {
+        font-size: 1.2em;
     }
+    .iconify {
+        color: var(--cor00);
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
     section#home{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 40px 10px;
-        font-weight: bold;
         line-height: 36px;
+    }
+    section#home p{
+        font-size: 1.5em;
     }
     section#home h2{
         font-size: 3em;
@@ -192,5 +237,66 @@ footer {
     }
     div#project-down{
         display: flex;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    section{
+        margin: auto auto;
+        max-width: 1400px;
+    }
+    #sobre-content{
+        margin: 0 auto;
+        font-size: 1.3em;
+        width: 85vw;
+        max-width: 1000px;
+        padding: 22px;
+        background-color: #FAFAFA;
+        text-align: justify;
+        border-radius: 34px;
+    }
+
+    section#sobre h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    #profile {
+        margin: 100px 0px;
+    }
+    .iconify{
+        font-size: 50px;
+    }
+    .button{
+        font-size: 1.2em;
+    }
+
+    section#home{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        line-height: 43px;
+        margin-bottom: 20vh;
+    }
+
+    section#home p{
+        font-size: 2em;
+    }
+    section#home h2{
+        font-size: 4em;
+        margin-left: 5px;
+        margin-bottom: 14px;
+    }
+    div#project-up{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div#project-down{
+        display: flex;
+    }
+    .project img{
+        width: 400px;
     }
 }
