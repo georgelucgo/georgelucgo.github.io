@@ -62,7 +62,7 @@ section {
 }
 
 #bg1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://media.istockphoto.com/id/1149011243/vector/horizontal-vector-illustration-of-an-empty-light-bluish-grey-grungy-textured-background.jpg?s=612x612&w=0&k=20&c=PBeWiCr8PlhqTcJMKkmvRwFVHmpcxMabI1jSVsoOH9U=');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/assets/imagens/background-lightblue.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
