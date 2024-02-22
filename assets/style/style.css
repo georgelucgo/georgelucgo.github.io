@@ -62,7 +62,7 @@ section {
 }
 
 #bg1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/assets/imagens/background-lightblue.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/assets/imagens/background-blue.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
